@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+    background-color:#FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    ;
+}
+.navContainer{
+    width: 100vw;
+    /* background-color: palegreen; */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+nav{
+    width: 100%;
+    padding-right: 2rem;
+    
+}
+#navList{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#navLogo{
+    font-size: 2.8rem;
+    color: #fff;   
+    font-family: "Bebas Neue", serif;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2.8rem;
+    color: #fff;
+    
+    
+}
+.details{
+    display: flex;
+    gap: 40px;
+}
+.footerBox{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+}
+.footerBox p{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0;
+    font-family: "Dancing Script", serif;
+
+}
+.contentBox {
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px solid black;
+    border-radius: 20px;
+}
+.rightBox img{
+    /* padding: 5px 10px 10px 10px; */
+    height: 300px;
+    /* border: 1px solid ; */
+    border-radius: 20px;
+    transition: transform 0.6s ease-in-out 0sec;
+}
+.rightBox:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s ease-in-out 0.1s;
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2{
+    font-size: 2rem;
+    font-family: "Dancing Script", serif;
+}
+.ingBox{
+    font-size: 1.3rem;
+    font-family: "Dancing Script", serif;
+}
+.recipeBox{
+    font-size: 1.1rem;
+    font-family: "Dancing Script", serif;
+}
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(86, 82, 82, 0.6);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out 0s;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    color: #fff;
+    font-size: 1.2rem;
+}
