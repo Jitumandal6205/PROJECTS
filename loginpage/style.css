@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ body {
+    font-family: "poppins",sans-serif;
+ }
+.box {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vmin;
+
+}
+
+.box .container {
+    width: 400px;
+    padding: 5vmin 3vmin;
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vmin;
+    box-shadow: 0px 0px 5px black;
+}
+
+@media screen and (max-width:500px) {
+    .box .conatiner{
+        width: 100%;
+    }
+    
+}
+
+.box .container h1 {
+    font-size: 2.3em;
+
+}
+
+.box .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vmin;
+    
+}
+
+.box .container form input {
+    padding: 1vmin 0.5vmin;
+    font-family: "poppins",sans-serif;
+    border-radius: 30px;
+    border: 1px solid #838383;
+    outline: none;
+}
+
+.box .container .checks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+
+}
+
+.box .container .checks .first {
+    text-decoration: none;
+    display: flex;
+    color: black;
+    gap: 0.6vmin;
+}
+
+.box .container button {
+    padding: 1vmin 0.5vmin;
+    color: white;
+    background: #000;
+    font-family: "poppins",sans-serif;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+
+}
